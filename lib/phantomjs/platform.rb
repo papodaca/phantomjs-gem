@@ -87,6 +87,22 @@ module Phantomjs
       end
     end
 
+    class LinuxArm64 < Platform
+      class << self
+        def useable?
+          host_os.include?('linux') and (architecture.include?('arm64') or architecture.include?('aarch64'))
+        end
+
+        def platform
+          'aarch64-linux'
+        end
+
+        def package_url
+          'https://github.com/fg2it/phantomjs-on-raspberry/releases/download/v2.1.1-stretch-arm64/phantomjs_2.1.1_arm64.tgz'
+        end
+      end
+    end
+
     class Linux64 < Platform
       class << self
         def useable?

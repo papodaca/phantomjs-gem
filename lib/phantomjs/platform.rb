@@ -98,7 +98,7 @@ module Phantomjs
         end
 
         def package_url
-          'https://github.com/papodaca/phantomjs-gem/releases/download/aarch64/phantomjs_2.1.1_arm64.tar.gz'
+          'https://github.com/papodaca/phantomjs-gem/releases/download/aarch64/phantomjs_2.1.1_arm64.tar.bz2'
         end
       end
     end
